@@ -9,7 +9,10 @@ djangorestframework = "*"
 pygments = "*"
 passlib = "*"
 awsebcli = "*"
-
+numpy = "*"
+sklearn = "*"
+matplotlib = "*"
+pandas = "*"
 [dev-packages]
 
 [requires]
