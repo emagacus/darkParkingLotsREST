@@ -24,6 +24,11 @@ urlpatterns = [
     path('concept/<int:pk>/', views.ConceptDetail.as_view(), name='inquiry-concepts'),
     path('inquiry/', views.InquiryCreate.as_view(), name='inquiry-create'),
     path('inquiry/<int:pk>/', views.InquiryDetail.as_view(), name='inquiry-detail'),
+    path('parkings/new', views.ParkingCreate.as_view(), name='parking-create'),
+    path('parkings/', views.ParkingsList.as_view(), name='parking-list'),
+    path('status/', views.StatusList.as_view(), name='status-list'),
+    path('status/<int:pk>/', views.StatusDetail.as_view(), name='status-detail'),
+    path('predict', views.CustomGet.as_view(), name='predict'),
     path('', views.api_root),
 ]
 

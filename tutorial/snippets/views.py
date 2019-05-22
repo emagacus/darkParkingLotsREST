@@ -2,8 +2,8 @@
 from django.contrib.auth.models import User # new
 from rest_framework import generics
 
-from .models import Snippet , Category , Carousel , Service, Tags,Profile , Inquiry, Concept
-from .serializers import SnippetSerializer, CategorySerializer,UserSerializer, CarouselSerializer ,ServiceSerializer, TagsSerializer,ProfileSerializer,ConceptSerializer,InquirySerializer# new
+from .models import Snippet , Category , Carousel , Service, Tags,Profile , Inquiry, Concept,Parking,Status
+from .serializers import ParkingSerializer,StatusSerializer,SnippetSerializer, CategorySerializer,UserSerializer, CarouselSerializer ,ServiceSerializer, TagsSerializer,ProfileSerializer,ConceptSerializer,InquirySerializer# new
 from rest_framework import generics, permissions # new
 from .permissions import IsOwnerOrReadOnly # new
 from .permissions import IsOwner
@@ -12,22 +12,23 @@ from rest_framework.response import Response # new
 from rest_framework.reverse import reverse # new
 from passlib.hash import pbkdf2_sha256
 from django.contrib.auth.hashers import make_password
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
+from .predictor import Predictor
 
 
 @api_view(['GET']) # new
 def api_root(request, format=None):
     return Response({
         'users': reverse('user-list', request=request, format=format),
-        'snippets': reverse('snippet-list', request=request, format=format),
-        'carousels': reverse('carousel-list', request=request, format=format),
-        'categories': reverse('category-list', request=request, format=format),
-        'services': reverse('service-list', request=request, format=format),
-        'tags': reverse('tags-list', request=request, format=format),
         'profile': reverse('profile-create', request=request, format=format),
         'register':reverse('user-register', request=request, format=format),
-        'concepts':reverse('inquiry-concept', request=request, format=format),
-        'inquiries':reverse('inquiry-create',request=request,format=format)
+        'parkings':reverse('parking-list', request=request, format=format),
+        'status':reverse('status-list', request=request, format=format),
+        'predict':reverse('predict', request=request, format=format),
+        #'status':reverse('status-detail', request=request, format=format)
+        
     })
 
 
@@ -202,8 +203,63 @@ class ProfileDetail(generics.RetrieveUpdateDestroyAPIView):
 
 	def perform_create(self, serializer): # new
 		serializer.save(owner=self.request.user)
+#####
+class ParkingCreate(generics.CreateAPIView):
+    queryset = Parking.objects.all()
+    serializer_class = ParkingSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,IsOwner,) # new
+
+
+    def perform_create(self, serializer): # new
+        serializer.save(owner=self.request.user)
+
+
+class ParkingsList(generics.ListCreateAPIView):
+	queryset = Parking.objects.all()
+	serializer_class = ParkingSerializer
+	permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+
+	def perform_create(self, serializer): # new
+		serializer.save(owner=self.request.user)
+        
+"""
+class StatusCreate(generics.CreateAPIView):
+    queryset = Status.objects.all()
+    serializer_class = StatusSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,IsOwner,) # new
+
+
+    def perform_create(self, serializer): # new
+        serializer.save(owner=self.request.user)
+"""
+
+class StatusList(generics.ListCreateAPIView):
+	queryset = Status.objects.all()
+	serializer_class = StatusSerializer
+	permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+
+	def perform_create(self, serializer): # new
+		serializer.save(owner=self.request.user)
+
+class StatusDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Status.objects.all()
+    serializer_class = StatusSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,IsOwnerOrReadOnly,)
 
 
 
+#Predicciones
 
-
+class CustomGet(APIView):
+  """
+  A custom endpoint for GET request.
+  """
+  def get(self, request, format=None):
+    """
+    Return a hardcoded response.
+    """
+    #username = self.request.query_params.get()
+    date = request.query_params.get("date")
+    
+    myCustomResponse = Predictor.predict(self,date)
+    return Response({"success": True, "free_spaces": myCustomResponse})

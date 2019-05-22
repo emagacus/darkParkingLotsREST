@@ -176,3 +176,41 @@ class Concept(models.Model):
     def __str__(self):
         return self.quantity
 
+
+######
+
+class Parking(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=100, blank=True, default='')
+    coordinates = models.TextField()
+    address = models.TextField()
+    capacity = models.TextField()
+    isEnabled = models.BooleanField(default=True)
+    owner = models.ForeignKey('auth.User', related_name='parkings', on_delete=models.CASCADE) # new
+
+    class Meta:
+        ordering = ('created',)
+
+    def save(self, *args, **kwargs): # new
+        options = {'title': self.title} if self.title else {}
+        super(Parking, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.title
+
+class Status(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    freespaces = models.TextField()
+    occupied = models.TextField()
+    parking = models.ForeignKey("snippets.Parking", related_name="status",on_delete=models.CASCADE,primary_key=False)
+    owner = models.ForeignKey('auth.User', related_name='status', on_delete=models.CASCADE) # new
+
+    class Meta:
+        ordering = ('created',)
+
+    def save(self, *args, **kwargs): # new
+        options = {'freespaces': self.freespaces} if self.freespaces else {}
+        super(Status, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.freespaces

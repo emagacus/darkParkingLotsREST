@@ -8,6 +8,8 @@ from . models import Tags
 from . models import Profile
 from . models import Inquiry
 from . models import Concept
+from . models import Parking
+from . models import Status
 
 
 
@@ -29,3 +31,5 @@ admin.site.register(Service)
 admin.site.register(Profile)
 admin.site.register(Inquiry)
 admin.site.register(Concept)
+admin.site.register(Parking)
+admin.site.register(Status)

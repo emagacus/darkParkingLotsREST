@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES, Category, Carousel , Service ,Tags ,Profile ,Inquiry ,Concept
+from .models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES, Category, Carousel , Service ,Tags ,Profile ,Inquiry ,Concept,Parking,Status
 from django.contrib.auth.models import User
 
 
@@ -96,3 +96,16 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = ( 'name','email','phonenumber','phonenumber2','owner',)
 
+class ParkingSerializer(serializers.ModelSerializer):
+    owner = serializers.ReadOnlyField(source='owner.username') # new
+
+    class Meta:
+        model = Parking
+        fields = ( 'created','title','coordinates','address','capacity','owner')
+
+class StatusSerializer(serializers.ModelSerializer):
+    owner = serializers.ReadOnlyField(source='owner.username') # new
+    parking = serializers.PrimaryKeyRelatedField(many=False, queryset=Parking.objects.all())
+    class Meta:
+        model = Status
+        fields = ( 'created','freespaces','occupied','parking','owner')

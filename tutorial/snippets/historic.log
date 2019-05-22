@@ -1,0 +1,930 @@
+testline
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-22 05:41:05.548883' AND "django_session"."session_key" = 'izea3h89xkap33sqguh6s1gap5q3ijdu'); args=('2019-05-22 05:41:05.548883', 'izea3h89xkap33sqguh6s1gap5q3ijdu')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+"GET / HTTP/1.1" 200 10325
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-22 05:41:09.490786' AND "django_session"."session_key" = 'izea3h89xkap33sqguh6s1gap5q3ijdu'); args=('2019-05-22 05:41:09.490786', 'izea3h89xkap33sqguh6s1gap5q3ijdu')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "snippets_status"."id", "snippets_status"."created", "snippets_status"."freespaces", "snippets_status"."occupied", "snippets_status"."parking_id", "snippets_status"."owner_id" FROM "snippets_status" ORDER BY "snippets_status"."created" ASC; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'rows' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'rows' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in {'base_template': 'select.html', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f77da0bb5c0>}
+Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 70, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in <BoundField value= errors=None>
+(0.000) SELECT "snippets_parking"."id", "snippets_parking"."created", "snippets_parking"."title", "snippets_parking"."coordinates", "snippets_parking"."address", "snippets_parking"."capacity", "snippets_parking"."isEnabled", "snippets_parking"."owner_id" FROM "snippets_parking" ORDER BY "snippets_parking"."created" ASC  LIMIT 1000; args=()
+"GET /status/ HTTP/1.1" 200 13920
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-22 05:42:13.358655' AND "django_session"."session_key" = 'izea3h89xkap33sqguh6s1gap5q3ijdu'); args=('2019-05-22 05:42:13.358655', 'izea3h89xkap33sqguh6s1gap5q3ijdu')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+"GET / HTTP/1.1" 200 10325
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-22 05:42:16.736094' AND "django_session"."session_key" = 'izea3h89xkap33sqguh6s1gap5q3ijdu'); args=('2019-05-22 05:42:16.736094', 'izea3h89xkap33sqguh6s1gap5q3ijdu')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.000) SELECT "snippets_status"."id", "snippets_status"."created", "snippets_status"."freespaces", "snippets_status"."occupied", "snippets_status"."parking_id", "snippets_status"."owner_id" FROM "snippets_status" ORDER BY "snippets_status"."created" ASC; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'rows' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'placeholder' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'placeholder'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [placeholder] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'rows' in template 'rest_framework/horizontal/textarea.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'rows'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [rows] in {'base_template': 'textarea.html', 'input_type': 'text', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'hide_label' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'hide_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [hide_label] in {'base_template': 'select.html', 'template_pack': 'rest_framework/horizontal', 'renderer': <rest_framework.renderers.HTMLFormRenderer object at 0x7f3fddd2ebe0>}
+Exception while resolving variable 'allow_blank' in template 'rest_framework/horizontal/select.html'.
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'BoundField' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/utils/serializer_helpers.py", line 70, in __getattr__
+    return getattr(self._field, attr_name)
+AttributeError: 'PrimaryKeyRelatedField' object has no attribute 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'allow_blank'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [allow_blank] in <BoundField value= errors=None>
+(0.000) SELECT "snippets_parking"."id", "snippets_parking"."created", "snippets_parking"."title", "snippets_parking"."coordinates", "snippets_parking"."address", "snippets_parking"."capacity", "snippets_parking"."isEnabled", "snippets_parking"."owner_id" FROM "snippets_parking" ORDER BY "snippets_parking"."created" ASC  LIMIT 1000; args=()
+"GET /status/ HTTP/1.1" 200 13920
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-05-22 05:42:21.848571' AND "django_session"."session_key" = 'izea3h89xkap33sqguh6s1gap5q3ijdu'); args=('2019-05-22 05:42:21.848571', 'izea3h89xkap33sqguh6s1gap5q3ijdu')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 6, in predict
+    return "prediccion de:" + date
+TypeError: must be str, not NoneType
+"GET /predict HTTP/1.1" 500 90201
+"GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1744
+"GET /predict?date=emagaca HTTP/1.1" 200 54
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 23, in predict
+    date = dateutil.parser.parse(date)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1356, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 648, in parse
+    raise ValueError("Unknown string format:", timestr)
+ValueError: ('Unknown string format:', 'emagaca')
+"GET /predict?date=emagaca HTTP/1.1" 500 16577
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 31, in predict
+    diffdays = date - today
+TypeError: can't subtract offset-naive and offset-aware datetimes
+"GET /predict?date=2008-09-03T20:56:35.450686Z HTTP/1.1" 500 16271
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 23, in predict
+    date = dateutil.parser.parse(date)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1356, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 653, in parse
+    ret = self._build_naive(res, default)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1227, in _build_naive
+    naive = default.replace(**repl)
+ValueError: month must be in 1..12
+"GET /predict?date=2019-22-05T05:56:35.450686Z HTTP/1.1" 500 16771
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 23, in predict
+    date = dateutil.parser.parse(date)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1356, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 653, in parse
+    ret = self._build_naive(res, default)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1227, in _build_naive
+    naive = default.replace(**repl)
+ValueError: month must be in 1..12
+"GET /predict?date=%272019-22-05T05:56:35.450686Z%27 HTTP/1.1" 500 16785
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 23, in predict
+    date = dateutil.parser.parse(date)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1356, in parse
+    return DEFAULTPARSER.parse(timestr, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 653, in parse
+    ret = self._build_naive(res, default)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/dateutil/parser/_parser.py", line 1227, in _build_naive
+    naive = default.replace(**repl)
+ValueError: month must be in 1..12
+"GET /predict?date=2019-22-05T05:56:35.450686Z HTTP/1.1" 500 16771
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 31, in predict
+    diffdays = date - today
+TypeError: can't subtract offset-naive and offset-aware datetimes
+"GET /predict?date=2019-05-22T05:56:35.450686Z HTTP/1.1" 500 16271
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 34, in predict
+    data = pd.read_csv('users.csv')
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'users.csv' does not exist: b'users.csv'
+"GET /predict?date=2019-05-22T05:56:35.450686 HTTP/1.1" 500 17454
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 34, in predict
+    data = pd.read_csv('users.csv')
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'users.csv' does not exist: b'users.csv'
+"GET /predict?date=2019-05-22T05:56:35.450686 HTTP/1.1" 500 17454
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 34, in predict
+    data = pd.read_csv('users.csv')
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 702, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 429, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 895, in __init__
+    self._make_engine(self.engine)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 1122, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/io/parsers.py", line 1853, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 387, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 705, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File b'users.csv' does not exist: b'users.csv'
+"GET /predict?date=2019-05-22T05:56:35.450686 HTTP/1.1" 500 17454
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '600'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 39, in predict
+    y = np.asanyarray(data[str(hours)])
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/core/frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '600'
+"GET /predict?date=2019-05-22T05:56:35.450686 HTTP/1.1" 500 17820
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /predict?date=2019-05-22T05:56:35.450686 HTTP/1.1" 200 35
+"GET /predict?date=2019-05-23T06:56:35.450686 HTTP/1.1" 200 35
+"GET /predict?date=2019-05-23T08:56:35.450686 HTTP/1.1" 200 35
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '100'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 39, in predict
+    y = np.asanyarray(data[str(hours)])
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/core/frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '100'
+"GET /predict?date=2019-05-23T00:56:35.450686 HTTP/1.1" 500 17820
+"GET /predict?date=2019-05-23T01:56:35.450686 HTTP/1.1" 200 35
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Internal Server Error: /predict
+Traceback (most recent call last):
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/emagaca/.local/share/virtualenvs/helgas-j8pnR5h4/lib/python3.6/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/views.py", line 264, in get
+    myCustomResponse = Predictor.predict(self,date)
+  File "/home/emagaca/Documents/pmAPI/smartpark/helgas/tutorial/snippets/predictor.py", line 74, in predict
+    pred = pred + predictDelta
+TypeError: must be str, not int
+"GET /predict?date=2019-05-23T01:56:35.450686 HTTP/1.1" 500 16203
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /predict?date=2019-05-23T01:56:35.450686 HTTP/1.1" 200 34
+"GET /predict?date=2019-05-23T06:56:35.450686 HTTP/1.1" 200 34
+"GET /predict?date=2019-05-23T09:56:35.450686 HTTP/1.1" 200 34
+"GET /predict?date=2019-05-23T04:56:35.450686 HTTP/1.1" 200 35
